@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Eye, EyeOff, Upload, FileText, ImageIcon } from "lucide-react";
+import { Eye, EyeOff, FileText, ImageIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -55,7 +55,7 @@ export function SignUpForm() {
             value={formData.fullName}
             onChange={handleChange}
             placeholder="Your name"
-            className="bg-white/5 border-white/10 text-white placeholder:text-gray-500 focus:border-blue-500 focus:ring-blue-500/20"
+            className="bg-white/5 p-5 border-white/10 text-white placeholder:text-gray-500 focus:border-blue-500 focus:ring-blue-500/20"
           />
         </div>
 
@@ -69,7 +69,7 @@ export function SignUpForm() {
             value={formData.email}
             onChange={handleChange}
             placeholder="your@email.com"
-            className="bg-white/5 border-white/10 text-white placeholder:text-gray-500 focus:border-blue-500 focus:ring-blue-500/20"
+            className="bg-white/5 p-5 border-white/10 text-white placeholder:text-gray-500 focus:border-blue-500 focus:ring-blue-500/20"
           />
         </div>
       </div>
@@ -87,7 +87,7 @@ export function SignUpForm() {
               value={formData.password}
               onChange={handleChange}
               placeholder="Create a strong password"
-              className="bg-white/5 border-white/10 text-white placeholder:text-gray-500 focus:border-blue-500 focus:ring-blue-500/20 pr-10"
+              className="bg-white/5 p-5 border-white/10 text-white placeholder:text-gray-500 focus:border-blue-500 focus:ring-blue-500/20 pr-10"
             />
             <button
               type="button"
@@ -109,7 +109,7 @@ export function SignUpForm() {
             value={formData.confirmPassword}
             onChange={handleChange}
             placeholder="Confirm your password"
-            className="bg-white/5 border-white/10 text-white placeholder:text-gray-500 focus:border-blue-500 focus:ring-blue-500/20"
+            className="bg-white/5 p-5 border-white/10 text-white placeholder:text-gray-500 focus:border-blue-500 focus:ring-blue-500/20"
           />
         </div>
       </div>
@@ -176,7 +176,7 @@ export function SignUpForm() {
       {/* Submit Button */}
       <Button
         type="submit"
-        className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 mt-6 h-11 text-base font-semibold"
+        className="w-full bg-linear-to-r from-blue-500 to-purple-600 hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 mt-6 h-11 text-base font-semibold"
       >
         Create Account
       </Button>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { SignUpForm } from "@/components/auth/sign-up-form";
 import { SignInForm } from "@/components/auth/sign-in-form";
+import { Button } from "@/components/ui/button";
 
 export default function AuthPage() {
   const [isSignUp, setIsSignUp] = useState(true);
@@ -51,14 +52,14 @@ export default function AuthPage() {
           </div>
 
           {/* Social */}
-          <div className="space-y-2">
+          <div className="space-y-3">
             <div className="relative">
               <div className="absolute inset-0 flex items-center">
                 <div className="w-full border-t border-white/10"></div>
               </div>
               <div className="relative flex justify-center text-sm">
                 <span
-                  className="mt-0 text-gray-400"
+                  className="px-2 text-gray-400"
                   style={{
                     background:
                       "linear-gradient(135deg, rgb(15, 23, 42) 0%, rgb(30, 41, 59) 50%, rgb(42, 24, 71) 100%)",
@@ -69,12 +70,18 @@ export default function AuthPage() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-3">
-              <button className="glass hover:glass-dark p-3 rounded-lg text-white font-medium transition-all hover:shadow-lg hover:shadow-blue-500/30 text-sm">
+              <Button
+                variant="outline"
+                className="bg-white/5 border-white/10 hover:bg-white/10"
+              >
                 Google
-              </button>
-              <button className="glass hover:glass-dark p-3 rounded-lg text-white font-medium transition-all hover:shadow-lg hover:shadow-purple-500/30 text-sm">
+              </Button>
+              <Button
+                variant="outline"
+                className="bg-white/5 border-white/10 hover:bg-white/10"
+              >
                 GitHub
-              </button>
+              </Button>
             </div>
           </div>
         </div>
