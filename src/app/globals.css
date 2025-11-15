@@ -212,3 +212,24 @@
     }
   }
 }
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl;
+  }
+  
+  .glass-dark {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-400 via-purple-400 to-purple-600 bg-clip-text text-transparent;
+  }
+  
+  .gradient-glow {
+    @apply shadow-xl shadow-blue-500/50;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/50;
+  }
+}
